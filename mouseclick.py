@@ -1,0 +1,12 @@
+import pyautogui, time
+print('Press Ctrl-C to quit.')
+time.sleep(2)
+pyautogui.click(586, 323)
+pyautogui.typewrite('Hello world!', 0.25)
+pyautogui.typewrite(['enter'])
+pyautogui.typewrite(['a', 'b', 'left', 'left', 'X', 'Y'])
+pyautogui.tripleClick()
+#pyautogui.typewrite(['volumemute'])
+find = pyautogui.locateOnScreen('btn.png')
+coord = pyautogui.center(find)
+pyautogui.click(coord)
