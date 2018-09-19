@@ -1,0 +1,78 @@
+<head>
+<style>
+label {
+    width:180px;
+    clear:left;
+    text-align:right;
+    padding-right:10px;
+}
+
+select{
+    float:left;
+	text-size: 12px;
+} 
+
+label {
+    float:left;
+}
+</style>
+<script>
+counter = 0
+function clickme() {
+	alert('Submitted Form!')
+	counter++;
+}
+</script>
+<body>
+
+<div style="text-align: center;">
+<div style="border:solid 1px; display: inline-block;text-align: left;">
+<form>
+<label>Script:</label>
+<select>
+<option></option>
+<option>Value1</option>
+<option>Value2</option>
+<option>Value3</option>
+<option>Value4</option>
+<option>Value5</option>
+</select><br>
+<label>System</label>
+<select>
+<option></option>
+<option>Value1</option>
+<option>Value2</option>
+<option>Value3</option>
+<option>Value4</option>
+<option>Value5</option>
+</select><br>
+<label>Region</label>
+<select>
+<option></option>
+<option>Value1</option>
+<option>Value2</option>
+<option>Value3</option>
+<option>Value4</option>
+<option>Value5</option>
+</select><br>
+<label>Status Qualifier</label>
+<select>
+<option></option>
+<option>Value1</option>
+<option>Value2</option>
+<option>Value3</option>
+<option>Value4</option>
+<option>Value5</option>
+</select><br><br><br>
+<label>Select System</label>
+<textarea rows=10 cols=50></textarea><br><br>
+<label>Select Reason</label>
+<textarea rows=5 cols=50></textarea><br><br>
+
+<input type="button" style="background-color:green;height:30px;width:100px" value="Upload" onClick="clickme()">&nbsp;
+<input type="reset" style="background-color:red;height:30px;width:100px" value="Reset">
+</form>
+</div>
+
+</div>
+</body>
